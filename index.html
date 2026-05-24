@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melomanos | Musica para quienes la sienten</title>
+
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y MENU -->
+    <header class="encabezado">
+        <div class="contenedor">
+            <nav class="barra-nav">
+                <!-- Se añade h1 para cumplir con la jerarquía semántica del sitio -->
+                <a href="index.html" class="logo">
+                    <h1><i class="fa-solid fa-compact-disc"></i> Melomanos</h1>
+                </a>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#artistas">Artistas</a></li>
+                    <li><a href="#canciones">Canciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="login.html" class="boton-nav">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SLIDER (albumes / artistas) -->
+    <section class="slider">
+        <div class="slider-pista">
+
+            <div class="slide slide-woodkid">
+                <div class="slide-texto">
+                    <span class="tag">Álbum destacado</span>
+                    <h2>Woodkid</h2>
+                    <p class="album">The Golden Age</p>
+                    <p>Pop barroco y orquestal con una fuerza cinematográfica inconfundible.</p>
+                </div>
+            </div>
+
+            <div class="slide slide-lowroar">
+                <div class="slide-texto">
+                    <span class="tag">Artista en foco</span>
+                    <h2>Low Roar</h2>
+                    <p class="album">0</p>
+                    <p>Folk atmosférico desde Islandia. La banda sonora perfecta para la melancolía.</p>
+                </div>
+            </div>
+
+            <div class="slide slide-magnolian">
+                <div class="slide-texto">
+                    <span class="tag">Descubrimiento</span>
+                    <h2>Magnolian</h2>
+                    <p class="album">Slow Burn</p>
+                    <p>Indie folk íntimo desde Mongolia, lleno de nostalgia y calma.</p>
+                </div>
+            </div>
+
+            <div class="slide slide-sufjan">
+                <div class="slide-texto">
+                    <span class="tag">Imprescindible</span>
+                    <h2>Sufjan Stevens</h2>
+                    <p class="album">Carrie &amp; Lowell</p>
+                    <p>Confesiones susurradas sobre la pérdida, el amor y la memoria.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="slider-flecha flecha-izq" aria-label="Anterior slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-flecha flecha-der" aria-label="Siguiente slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="slider-puntos">
+            <button class="punto activo" aria-label="Slide 1"></button>
+            <button class="punto" aria-label="Slide 2"></button>
+            <button class="punto" aria-label="Slide 3"></button>
+            <button class="punto" aria-label="Slide 4"></button>
+        </div>
+    </section>
+
+    <!-- ARTISTAS DESTACADOS -->
+    <section class="seccion" id="artistas">
+        <div class="contenedor">
+            <div class="cabecera">
+                <p class="tag">Para melómanos</p>
+                <h2 class="titulo">Artistas destacados</h2>
+            </div>
+
+            <div class="artistas">
+
+                <div class="artista">
+                    <div class="artista-banner col-woodkid"><span>W</span></div>
+                    <div class="artista-info">
+                        <h3>Woodkid</h3>
+                        <p>Yoann Lemoine, artista y director francés. Sonido orquestal y épico.</p>
+                    </div>
+                </div>
+
+                <div class="artista">
+                    <div class="artista-banner col-lowroar"><span>L</span></div>
+                    <div class="artista-info">
+                        <h3>Low Roar</h3>
+                        <p>Proyecto de Ryan Karazija. Folk melancólico que sonó en Death Stranding.</p>
+                    </div>
+                </div>
+
+                <div class="artista">
+                    <div class="artista-banner col-magnolian"><span>M</span></div>
+                    <div class="artista-info">
+                        <h3>Magnolian</h3>
+                        <p>Dulguun Bayasgalan, cantautor de Mongolia. Folk íntimo y nostálgico.</p>
+                    </div>
+                </div>
+
+                <div class="artista">
+                    <div class="artista-banner col-sufjan"><span>S</span></div>
+                    <div class="artista-info">
+                        <h3>Sufjan Stevens</h3>
+                        <p>Cantautor estadounidense de letras delicadas. Carrie &amp; Lowell, Illinois.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CANCIONES RECOMENDADAS -->
+    <section class="seccion" id="canciones">
+        <div class="contenedor">
+            <div class="cabecera">
+                <p class="tag">Lo que suena hoy</p>
+                <h2 class="titulo">Canciones recomendadas</h2>
+            </div>
+
+            <div class="canciones">
+
+                <!-- Low Roar -->
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Bones.jpg" alt="Bones"></div><h3>Bones</h3><p>Low Roar</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Low-Roar.jpg" alt="St. Eriksplan"></div><h3>St. Eriksplan</h3><p>Low Roar</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/H.png" alt="H.A.F.H"></div><h3>H.A.F.H</h3><p>Low Roar</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/I_ll_make_you_feel.jpg" alt="I'll Make You Feel"></div><h3>I'll Make You Feel</h3><p>Low Roar</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/artworks-q6qoAVz2JSjv-0-t500x500.jpg" alt="Vampire On My Fridge"></div><h3>Vampire On My Fridge</h3><p>Low Roar</p></div>
+
+                <!-- Woodkid -->
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/I_love_you.jpg" alt="I Love You"></div><h3>I Love You</h3><p>Woodkid</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Pale_Yellow.jpg" alt="Pale Yellow"></div><h3>Pale Yellow</h3><p>Woodkid</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Baltimores.jpg" alt="Baltimore's Fireflies"></div><h3>Baltimore's Fireflies</h3><p>Woodkid</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Any_kind_of.jpg" alt="Any Love Of Any Kind"></div><h3>Any Love Of Any Kind</h3><p>Woodkid</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Run-boy-run-by-woodkid.jpg" alt="Run Boy Run"></div><h3>Run Boy Run</h3><p>Woodkid</p></div>
+
+                <!-- Magnolian -->
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Indigo.jpg" alt="Indigo"></div><h3>Indigo</h3><p>Magnolian</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Magnolian.jpg" alt="Rome"></div><h3>Rome</h3><p>Magnolian</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Geese.jpg" alt="Geese"></div><h3>Geese</h3><p>Magnolian</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Caroline.jpg" alt="Caroline"></div><h3>Caroline</h3><p>Magnolian</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Primadona.jpg" alt="Primadonna"></div><h3>Primadonna</h3><p>Magnolian</p></div>
+
+                <!-- Sufjan Stevens -->
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Mystery of love.jpg" alt="Mystery Of Love"></div><h3>Mystery Of Love</h3><p>Sufjan Stevens</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Back to Oz.jpg" alt="Back To Oz"></div><h3>Back To Oz</h3><p>Sufjan Stevens</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Sufjan_Stevens.jpg" alt="Should Have Known Better"></div><h3>Should Have Known Better</h3><p>Sufjan Stevens</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/My red little fox.jpg" alt="My Red Little Fox"></div><h3>My Red Little Fox</h3><p>Sufjan Stevens</p></div>
+                <div class="cancion"><div class="cancion-cover"><img src="IMG/Sufjan_Stevens.jpg" alt="Fourth Of July"></div><h3>Fourth Of July</h3><p>Sufjan Stevens</p></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+        <div class="contenedor footer-grid">
+            <div>
+                <div class="footer-logo">Melomanos</div>
+                <p>Un espacio para quienes la música no es ruido de fondo, sino una forma de sentir.</p>
+            </div>
+            <div>
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#artistas">Artistas</a></li>
+                    <li><a href="#canciones">Canciones</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <div class="redes">
+                    <a href="#" aria-label="Contacto por Correo"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="footer-base">&copy; 2026 Melomanos &middot; Christopher Leiton &middot; Universidad Mariano Gálvez de Guatemala</div>
+        </div>
+    </footer>
+
+    <script src="Slider/slider.js"></script>
+
+</body>
+</html>

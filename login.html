@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion | Melomanos</title>
+
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Pagina de inicio de sesion. Es solo diseno, no procesa datos. -->
+    <main class="pagina-auth">
+        <div class="auth-tarjeta">
+
+            <div class="avatar"><i class="fa-solid fa-compact-disc"></i></div>
+            <h1>Bienvenido de vuelta</h1>
+            <p class="subtitulo">Ingresa para seguir descubriendo musica</p>
+
+            <div class="campo">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" placeholder="Tu nombre de usuario">
+            </div>
+
+            <div class="campo">
+                <label for="clave">Contrasena</label>
+                <input type="password" id="clave" placeholder="Tu contrasena">
+            </div>
+
+            <div class="fila-opciones">
+                <label><input type="checkbox"> Recordarme</label>
+                <a href="recuperar.html">Olvide mi contrasena</a>
+            </div>
+
+            <button class="boton-completo">Iniciar sesion</button>
+
+            <!-- Separador y opcion de iniciar sesion con Facebook -->
+            <div class="separador">o</div>
+            <a href="#" class="boton-facebook"><i class="fa-brands fa-facebook-f"></i> Continuar con Facebook</a>
+
+            <p class="auth-pie">No tienes cuenta? <a href="registro.html">Registrate</a></p>
+
+            <a href="index.html" class="volver"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+
+        </div>
+    </main>
+
+</body>
+</html>

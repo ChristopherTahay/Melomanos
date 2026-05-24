@@ -1,0 +1,124 @@
+/* ============ MELOMANOS - Estilos (version simple) ============ */
+
+/* --- Variables (colores y tipografias) --- */
+:root{
+  --negro:#0c0b0e; --carbon:#151318; --hueso:#f2ede3; --gris:#9a948c;
+  --oro:#d8a73f; --linea:#2a2730;
+  --display:"Bodoni Moda",serif; --texto:"DM Sans",sans-serif;
+}
+
+/* --- Reglas generales --- */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--texto);background:var(--negro);color:var(--hueso);line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+.contenedor{width:90%;max-width:1150px;margin:0 auto;}
+
+/* --- Encabezado y menu --- */
+.encabezado{border-bottom:1px solid var(--linea);}
+.barra-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+.logo{font-family:var(--display);font-style:italic;font-size:24px;}
+.logo h1{font:inherit;margin:0;} /* el h1 del logo toma el tamano de .logo, sin margen extra */
+.menu{display:flex;list-style:none;gap:24px;align-items:center;}
+.menu a{color:var(--gris);font-size:15px;}
+.boton-nav{background:var(--oro);color:var(--negro);padding:9px 20px;border-radius:30px;font-weight:700;}
+
+/* --- Slider --- */
+.slider{position:relative;width:100%;height:520px;overflow:hidden;}
+.slider-pista{display:flex;height:100%;transition:transform .6s ease;} /* esta transicion mueve el slider, es necesaria */
+.slide{min-width:100%;height:100%;position:relative;display:flex;align-items:center;}
+.slide-woodkid{background:url('../IMG/woodkid_slider.jpg') center/cover;}
+.slide-lowroar{background:url('../IMG/Low-Roar.jpg') center top/cover;}
+.slide-magnolian{background:url('../IMG/Magnolian.jpg') center 35%/cover;}
+.slide-sufjan{background:url('../IMG/Sufjan_Stevens.jpg') center 35%/cover;}
+.slide::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.5);} /* capa oscura plana para leer el texto */
+.slide-texto{position:relative;z-index:2;max-width:600px;padding:0 6%;}
+.slide-texto h2{font-family:var(--display);font-size:56px;margin:8px 0 4px;}
+.album{font-style:italic;opacity:.85;font-size:20px;margin-bottom:14px;}
+.slide-texto p{max-width:460px;opacity:.9;}
+
+/* --- Flechas y puntos del slider --- */
+.slider-flecha{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);color:var(--hueso);border:none;width:46px;height:46px;border-radius:50%;font-size:18px;cursor:pointer;z-index:3;}
+.flecha-izq{left:20px;}
+.flecha-der{right:20px;}
+.slider-puntos{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:3;}
+.punto{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.4);border:none;cursor:pointer;}
+.punto.activo{background:var(--oro);}
+
+/* --- Etiqueta dorada (se usa en slider y secciones) --- */
+.tag{color:var(--oro);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700;}
+
+/* --- Secciones --- */
+.seccion{padding:60px 0;}
+.cabecera{margin-bottom:28px;}
+.titulo{font-family:var(--display);font-size:34px;margin-top:4px;}
+
+/* --- Canciones --- */
+.canciones{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px;}
+.cancion{background:var(--carbon);border:1px solid var(--linea);border-radius:12px;padding:12px;}
+.cancion-cover{aspect-ratio:1/1;border-radius:8px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.cancion-cover img{width:100%;height:100%;object-fit:cover;} /* la portada llena el cuadro sin deformarse */
+.cancion-cover span{font-family:var(--display);font-style:italic;font-size:42px;color:var(--hueso);}
+.cancion h3{font-size:15px;}
+.cancion p{font-size:13px;color:var(--gris);}
+
+/* --- Colores solidos por artista (sin degradados) --- */
+.col-woodkid{background:#6b4a14;}
+.col-lowroar{background:#27484f;}
+.col-magnolian{background:#4a2330;}
+.col-sufjan{background:#3a2f4a;}
+
+/* --- Artistas --- */
+.artistas{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;}
+.artista{background:var(--carbon);border:1px solid var(--linea);border-radius:12px;overflow:hidden;}
+.artista-banner{height:110px;display:flex;align-items:center;justify-content:center;}
+.artista-banner span{font-family:var(--display);font-style:italic;font-size:48px;color:var(--hueso);}
+.artista-info{padding:18px;}
+.artista-info h3{font-family:var(--display);font-size:22px;margin:5px 0 8px;}
+.artista-info p{color:var(--gris);font-size:14px;}
+
+/* --- Footer --- */
+.footer{background:#08070a;border-top:1px solid var(--linea);padding:45px 0;}
+.footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;}
+.footer-logo{font-family:var(--display);font-style:italic;font-size:22px;margin-bottom:10px;}
+.footer p,.footer a{color:var(--gris);font-size:14px;}
+.footer h4{margin-bottom:10px;text-transform:uppercase;font-size:14px;color:var(--hueso);}
+.footer ul{list-style:none;}
+.footer ul li{margin-bottom:6px;}
+.redes{display:flex;gap:12px;}
+.redes a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;color:var(--hueso);}
+.footer-base{text-align:center;color:var(--gris);font-size:13px;border-top:1px solid var(--linea);margin-top:28px;padding-top:18px;}
+
+/* --- Formularios (login, registro, recuperar) --- */
+.pagina-auth{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px;}
+.auth-tarjeta{background:var(--carbon);border:1px solid var(--linea);border-radius:16px;padding:40px;width:100%;max-width:400px;text-align:center;}
+.avatar{width:70px;height:70px;border-radius:50%;background:var(--oro);color:var(--negro);display:flex;align-items:center;justify-content:center;font-size:30px;margin:0 auto 18px;}
+.auth-tarjeta h1{font-family:var(--display);font-size:26px;margin-bottom:6px;}
+.subtitulo{color:var(--gris);font-size:14px;margin-bottom:24px;}
+.campo{text-align:left;margin-bottom:16px;}
+.campo label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;}
+.campo input{width:100%;padding:12px;border:1px solid var(--linea);border-radius:8px;background:var(--negro);color:var(--hueso);font-size:15px;}
+.fila-opciones{display:flex;justify-content:space-between;font-size:13px;margin-bottom:20px;}
+.fila-opciones a{color:var(--oro);}
+.boton-completo{width:100%;padding:13px;background:var(--oro);color:var(--negro);border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;}
+.auth-pie{margin-top:20px;font-size:14px;color:var(--gris);}
+.auth-pie a{color:var(--oro);}
+.volver{display:inline-block;margin-top:16px;font-size:13px;color:var(--gris);}
+
+/* --- Separador "o" y boton de Facebook --- */
+.separador{text-align:center;color:var(--gris);font-size:13px;margin:18px 0;}
+.boton-facebook{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:12px;background:#1877f2;color:#fff;border-radius:8px;font-weight:600;font-size:15px;}
+
+/* --- Registro (dos columnas) --- */
+.registro-tarjeta{display:grid;grid-template-columns:1fr 1fr;max-width:740px;width:100%;background:var(--carbon);border:1px solid var(--linea);border-radius:16px;overflow:hidden;}
+.registro-form{padding:40px;}
+.registro-form h1{font-family:var(--display);font-size:28px;margin-bottom:22px;}
+.registro-social{background:var(--oro);color:var(--negro);padding:40px;display:flex;flex-direction:column;justify-content:center;}
+.registro-social h2{font-family:var(--display);font-size:24px;margin-bottom:20px;}
+.boton-social{display:flex;align-items:center;gap:12px;background:rgba(0,0,0,.15);color:var(--negro);padding:12px 16px;border-radius:8px;margin-bottom:12px;font-size:14px;font-weight:600;}
+
+/* --- Responsive (pantallas pequenas) --- */
+@media(max-width:760px){
+  .slide-texto h2{font-size:36px;}
+  .registro-tarjeta{grid-template-columns:1fr;}
+}
