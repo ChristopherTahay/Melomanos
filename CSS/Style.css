@@ -86,7 +86,7 @@ img{max-width:100%;display:block;}
 .sobre-personal{margin-top:60px;border-top:1px solid var(--linea);padding-top:50px;}
 .sobre-bio{color:var(--gris);font-size:16px;max-width:780px;margin-bottom:32px;}
 .fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:36px;}
-.fotos img{width:50%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid var(--linea);}
+.fotos img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid var(--linea);}
 .mvv{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
 .mvv-bloque{background:var(--carbon);border:1px solid var(--linea);border-radius:12px;padding:26px;}
 .mvv-bloque h3{font-family:var(--display);font-size:22px;margin-bottom:10px;color:var(--oro);}
