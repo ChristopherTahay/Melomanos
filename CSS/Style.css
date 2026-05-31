@@ -77,6 +77,21 @@ img{max-width:100%;display:block;}
 .artista-info h3{font-family:var(--display);font-size:22px;margin:5px 0 8px;}
 .artista-info p{color:var(--gris);font-size:14px;}
 
+/* --- Sobre (cita de la pagina) --- */
+.sobre-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:center;}
+.sobre-cita blockquote{font-family:var(--display);font-style:italic;font-size:30px;line-height:1.3;margin-top:14px;color:var(--hueso);}
+.sobre-texto p{color:var(--gris);margin-bottom:14px;}
+
+/* --- Sobre mi (bio + fotos + mision/vision/valores) --- */
+.sobre-personal{margin-top:60px;border-top:1px solid var(--linea);padding-top:50px;}
+.sobre-bio{color:var(--gris);font-size:16px;max-width:780px;margin-bottom:32px;}
+.fotos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:36px;}
+.fotos img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid var(--linea);}
+.mvv{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;}
+.mvv-bloque{background:var(--carbon);border:1px solid var(--linea);border-radius:12px;padding:26px;}
+.mvv-bloque h3{font-family:var(--display);font-size:22px;margin-bottom:10px;color:var(--oro);}
+.mvv-bloque p{color:var(--gris);font-size:14px;}
+
 /* --- Footer --- */
 .footer{background:#08070a;border-top:1px solid var(--linea);padding:45px 0;}
 .footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;}
